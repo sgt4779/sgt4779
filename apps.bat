@@ -165,7 +165,7 @@ color E
 GOTO MENU
 REM :join
 REM cd C:\
-REM start wmic COMPUTERSYSTEM WHERE Name="%COMPUTERNAME%" CALL JoinDomainOrWorkgroup FJoinOptions=3 Name="inhealthmd.com" UserName="itsvc" Password="!Ma2012"
+REM start wmic COMPUTERSYSTEM WHERE Name="%COMPUTERNAME%" CALL JoinDomainOrWorkgroup FJoinOptions=3 Name="inhealthmd.com" UserName="it" Password="Password"
 REM @echo off
 REM color A
 REM setlocal
@@ -181,7 +181,7 @@ REM color E
 GOTO MENU
 :spice
 cd C:\Users\itadmin\Desktop\New_Project\
-start Msiexec.exe /I "Spiceworks Agent.msi" /q /l*v c:\spiceworksinstall.log SPICEWORKS_SERVER="172.16.0.46" SPICEWORKS_AUTH_KEY="zI0GcCqsSmq/RS5xOKe6qZQqUxQ=" SPICEWORKS_PORT=444 ADDLOCAL=FeatureService,FeatureTray  /norestart
+start Msiexec.exe /I "Spiceworks Agent.msi" /q /l*v c:\spiceworksinstall.log SPICEWORKS_SERVER="172.16.0.46" SPICEWORKS_AUTH_KEY="Hash" SPICEWORKS_PORT=444 ADDLOCAL=FeatureService,FeatureTray  /norestart
 color A
 setlocal
 set "write=<nul set/p"
